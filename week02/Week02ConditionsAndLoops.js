@@ -45,7 +45,16 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let speedLimit = 40
+let mySpeed = 60
 
+if (mySpeed > speedLimit) {
+   console.log('Slow Down! Mom is mad!')
+} else if (mySpeed == speedLimit) {
+   console.log('Everyone is happy!')
+} else {
+   console.log('Speed up! Dad is mad!')
+}
 
 /*-------------------------------------------------------*/
 
@@ -64,7 +73,14 @@ Question 2: Is it time to wake up for work? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let alarmSet = false
+let weekDay = true
 
+if (alarmSet == true && weekDay == true) {
+   console.log('Sound Alarm! Time for work!')
+} else {
+   console.log('I can sleep in!')
+}
 
 /*-------------------------------------------------------*/
 
@@ -82,6 +98,14 @@ Question 3: Username & Password \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let username = 'Tommy123';
+let password = '12345';
+
+if (username == 'Tommy123' && password == '12345' || username == 'Timmy456' && password == '6789') {
+   console.log('Admin Login Successful')
+} else {
+   console.log('Admin Access Denied')
+}
 
 
 /*-------------------------------------------------------*/
@@ -102,8 +126,40 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let studentClass;
+let studentGrade = 5;
 
+switch (studentGrade) {
+   case 0:
+   case 1:
+   case 2:
+   case 3:
+   case 4:
+   case 5:
+   case 6:
+      studentClass = 'Elementary';
+      break;
+   case 7:
+   case 8:
+      studentClass = 'Middle';
+      break;
+   case 9:
+      studentClass = 'Freshman';
+      break;
+   case 10:
+      studentClass = 'Sophomore';
+      break;
+   case 11:
+      studentClass = 'Junior';
+      break;
+   case 12:
+      studentClass = 'Senior';
+      break;
+   default:
+      console.log('Error')
+}
 
+console.log(studentClass)
 /*-------------------------------------------------------*/
 
 console.log(`--------------------------
@@ -117,6 +173,26 @@ Question 5: Loops! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+//step 1:
+//for (let i = 10; i > -11; i--) {
+//  console.log(i)
+//}
+
+//step 2:
+let i = 0;
+
+//do {
+//   i++;
+//   console.log(i); 
+//} while (i < 50 );
+
+//step 3:
+do {
+   if (i % 4 == 0 ) {
+      console.log(i)
+    }
+    i++
+} while (i < 50)
 
 
 /*-------------------------------------------------------*/
@@ -131,7 +207,10 @@ Question 5: Debugging an infinite loop! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+      //start      //stop    //incrementor
+      for(let i = 0;   i < 10;     i++){
+         console.log(i);
+     } 
 
 
 console.log('-----------Finished------------')
