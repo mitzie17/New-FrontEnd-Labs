@@ -40,7 +40,8 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+const lettersArray = alphabetString.split('')
+console.log(lettersArray)
 
 
 
@@ -59,7 +60,10 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+const zToA = alphabetArray.reverse()
+const toString = zToA.join('')
+console.log('Step 1: Reorganize array from z to a: ' + zToA)
+console.log('Step 2: Convert elements in the array into a string without spaces: ' + toString)
 
 
 
@@ -82,8 +86,19 @@ let array1 = [1, 5, 6, 9, 10, 14];
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+console.log('Step 1: Print array1 to the console: ' + array1)
+
+console.log('Step 2: Print the 3rd element in array1: ' + array1[2])
+
+console.log('Step 3: Print the last element in array1: ' + array1[array1.length - 1])
 
 
+let array2 = array1.concat(16,3)
+console.log('Step 4: Add 16 and 3 to array1 and Print the updated array: ' + array2)
+
+console.log('Step 5: Print the 3rd element again: ' + array2[2])
+
+console.log('Step 6: Print the last element again. Did it change from earlier? Are you able to get the last element that was just added? ' + array2[array2.length - 1])
 
 
 
@@ -101,6 +116,27 @@ Question 4: Todo List \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
+
+console.log('Step 1: Create a variable called myTodoList that holds an empty array ')
+let myTodoList = []
+console.log(myTodoList)
+
+console.log('Step 2: Add three todo items (elements) to the array using a built-in array method ')
+myTodoList.push('Feed the cat', 'Eat breakfast', 'Walk the dog')
+console.log(myTodoList)
+
+console.log('Step 3: Remove the second element in the array, print the array to the console')
+myTodoList.splice(1,1)
+console.log(myTodoList)
+
+console.log('Step 4: Create another array called yourTodoList, add two todo items, and print the array to the console')
+let yourTodoList = ['Do laundry', 'Wash dishes']
+console.log(yourTodoList)
+
+console.log('Step 5: Create another array called ourTodoList, then concatenate (combine) myTodoList and yourTodoList into the array ourTodoList ')
+let ourTodoList = myTodoList.concat(yourTodoList)
+console.log(ourTodoList)
+
 
 
 
