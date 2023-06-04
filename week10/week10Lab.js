@@ -42,9 +42,36 @@ Part 1: Create a form with only JavaScript`)
            Do the same steps, appending a label/input for Email, and a submit button to your form.
  * ↓ YOUR CODE HERE ↓ */
 
-// console.log(myForm)
+// Answer:
+
+let myForm = document.createElement('form');
+let myLabel = document.createElement('label');
+let myInput = document.createElement('input');
+let myEmailLabel = document.createElement('label');
+let myEmail = document.createElement('input');
+let submit = document.createElement('button');
+
+myLabel.innerHTML = 'Name';
+myEmailLabel.innerHTML = 'Email';
+submit.innerHTML = 'Submit';
+
+myForm.appendChild(myLabel);
+myForm.appendChild(myInput);
+myForm.appendChild(myEmailLabel);
+myForm.appendChild(myEmail);
+myForm.appendChild(submit);
+document.body.appendChild(myForm);
+
+console.log(myForm)
+console.log(myLabel)
+console.log(myInput)
+console.log(myEmailLabel)
+console.log(myEmail)
+console.log(submit)
+
 //Question: Besides changing the innerHTML, what other HTML things can we change using JavaScript?
 //Answer:
+// We can change any attributes or properties for that element such as id, name, value, etc.
 
 /*------------------------ Styling a form with only JavaScript------------------------*/
 console.log(`-------------------------- 
