@@ -202,5 +202,22 @@ button.addEventListener('click', () => {
    }
 })
 
+// Answer (2):
+
+let image = document.createElement('img');
+image.setAttribute('src', 'horse.jpg');
+document.body.append(image);
+
+image.addEventListener('mouseover', () => {
+      image.setAttribute('src', '')
+})
+
+image.addEventListener('mouseout', () => {
+   image.setAttribute('src', 'horse.jpg')
+})
+
+// Answer (3):
+
+
 
 
