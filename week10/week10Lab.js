@@ -42,8 +42,6 @@ Part 1: Create a form with only JavaScript`)
            Do the same steps, appending a label/input for Email, and a submit button to your form.
  * ↓ YOUR CODE HERE ↓ */
 
-// Answer:
-
 let myForm = document.createElement('form');
 let myLabel = document.createElement('label');
 let myInput = document.createElement('input');
@@ -87,8 +85,16 @@ Part 2: Styling our form with only JavaScript`)
  *
  * ↓ YOUR CODE HERE ↓ */
 
+myForm.style.backgroundColor = 'blue';
+myForm.style.color = 'white';
+myForm.style.display = 'flex';
+myForm.style.flexDirection = 'column';
+myForm.style.maxWidth = '250px';
+
 //Question: Do you prefer styling with JavaScript or CSS?
 //Answer:
+// I prefer styling with CSS because it keeps the styling separate from the rest of the code and can modify different attributes/properties
+// in a more organized way.
 
 /*------------------------ Creating a table with only JavaScript ------------------------*/
 console.log(`-------------------------- 
@@ -107,7 +113,10 @@ Part 3: Creating a table with only JavaScript`)
  * Final Step: Style your table using JavaScript starting with a border. You may need to target more element/nodes than we did with myTable.
  * ↓ YOUR CODE HERE ↓ */
 
-// console.log(myTable)
+
+
+
+console.log(myTable)
 //Question: While this is clearly a more round-about way of making a table, how can using JavaScript in this way
 //          more beneficial than HTML?
 //Answer:
