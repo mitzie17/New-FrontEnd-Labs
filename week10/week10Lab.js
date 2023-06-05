@@ -160,9 +160,16 @@ Part 4: Changing our background on click`)
  *
  * ↓ YOUR CODE HERE ↓ */
 
+let myButton = document.getElementById('myButton');
+
+myButton.addEventListener('click', () => {
+   document.body.style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`;
+})
+
 //Question: What other event listeners are there?
 //             Try them out by replacing 'click' in your function above!
 //Answer:
+// There are many more event listeners such as scroll, mouseup, mousedown, pointerover, pointerleave, keydown, keyup, etc.
 
 console.log(`-----------Finished------------`)
 
@@ -175,3 +182,25 @@ console.log(`-----------Finished------------`)
  *    and append a new <tr> containing those values to your tBody element.
  *    Look into event.preventDefault(). Buttons inside of forms have a default setting to refresh the page.
  */
+
+// Answer (1):
+
+let button = document.createElement('button');
+let div = document.createElement('div');
+document.body.append(button);
+document.body.append(div);
+button.innerHTML = 'Hello';
+div.innerHTML = 'HELLO';
+
+button.addEventListener('click', () => {
+   if (button.innerHTML == 'Hello' && div.innerHTML == 'HELLO') {
+      button.innerHTML = 'World'
+      div.innerHTML = 'WORLD'
+   } else {
+      button.innerHTML = 'Hello'
+      div.innerHTML = 'HELLO'
+   }
+})
+
+
+
