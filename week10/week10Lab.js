@@ -113,13 +113,33 @@ Part 3: Creating a table with only JavaScript`)
  * Final Step: Style your table using JavaScript starting with a border. You may need to target more element/nodes than we did with myTable.
  * ↓ YOUR CODE HERE ↓ */
 
+let myTable = document.createElement('table');
+let myRow = document.createElement('tr');
+let myRow2 = document.createElement('tr');
+let myData = document.createElement('td');
+let myData2 = document.createElement('td');
 
+myData.innerHTML = 'Name:';
+myData2.innerHTML = 'Email:';
+
+myRow.appendChild(myData);
+myRow.insertCell(1).innerHTML = 'Mitzi'
+myRow2.appendChild(myData2);
+myRow2.insertCell(1).innerHTML = 'mitzi@promineo.com'
+myTable.appendChild(myRow);
+myTable.appendChild(myRow2);
+document.body.appendChild(myTable);
+
+myTable.style.border = '2px solid blue';
+myData.style.borderBottom = '2px solid red';
+myData2.style.borderBottom = '2px solid red'
 
 
 console.log(myTable)
 //Question: While this is clearly a more round-about way of making a table, how can using JavaScript in this way
 //          more beneficial than HTML?
 //Answer:
+// It can be more beneficial using JavaScript in this way because it makes it easier to add event listeners and add more functionality.
 
 /*------------------------ Changing our body background on click ------------------------*/
 console.log(`-------------------------- 
