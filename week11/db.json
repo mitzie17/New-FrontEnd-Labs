@@ -119,6 +119,18 @@
       "lastname": "Walsh",
       "grade": 79,
       "id": "20"
+    },
+    {
+      "firstname": "Tom",
+      "lastname": "Riddle",
+      "grade": "70",
+      "id": "HT7-tBm"
+    },
+    {
+      "firstname": "Mitzi",
+      "lastname": "Estrada",
+      "grade": "99",
+      "id": "q_cAl5A"
     }
   ]
 }
