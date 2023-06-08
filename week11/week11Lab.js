@@ -49,7 +49,7 @@ function replaceTextInDiv() {
   input.val('')
 }
 
-console.log($('#input-value').val())
+//console.log($('#input-value').val())
 /*------------------------------------------------*/
 // Question 2: Before and After
 
@@ -162,7 +162,7 @@ $('.test').on('click', function () {
   let lname = $('#lastname').val()
   let grade = $('#grade').val()
 
-  $.postBtn('http://localhost:3000/gradebook', {
+  $.post('http://localhost:3000/gradebook', {
     firstname: fname,
     lastname: lname,
     grade: grade,
@@ -175,5 +175,20 @@ $('.test').on('click', function () {
  *
  *
  * ↓ YOUR CODE HERE ↓ */
+
+$('.postBtn').on('click', function () {
+  let firstName = $('#firstname').val();
+  let lastName = $('#lastname').val();
+  let grade = $('#grade').val();
+
+  const FAKE_API = 'http://localhost:3000/gradebook';
+
+  $.post(FAKE_API, {
+    firstname: firstName,
+    lastname: lastName,
+    grade: grade
+  })
+
+})
 
 /*--------------------------------------------------*/
