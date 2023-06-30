@@ -73,9 +73,23 @@
 
 /* -- ALL YOUR COMPONENT/STYLE IMPORTS HERE -- */
 import './App.css'
+import Nav from './Nav'
+
+let date = new Date()
+ 
+            let singleUser = {
+              name: 'John',
+              time: date.toDateString(),
+            }
 
 function App() {
-  return <div className="App"></div>
+  return <div className="App">
+    <Nav />
+    <section>
+      <h1>Welcome, {singleUser.name}!</h1>
+      <p>Today's date is: {singleUser.time}</p>
+    </section>
+  </div>
 }
 
 export default App
