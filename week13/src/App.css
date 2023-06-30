@@ -1,0 +1,30 @@
+nav {
+    width: 100vw;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    padding: 1px
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+nav ul li:hover {
+    color: blue;
+}
+
+section {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background-color: lightslategray;
+    padding: 1em;
+}
